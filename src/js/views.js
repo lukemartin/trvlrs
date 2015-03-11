@@ -14,13 +14,12 @@ export class IndexView extends Marionette.ItemView {
 
     clicky(str='default!') {
         console.log(str);
-        alert(str);
     }
 }
 
 export class AnotherView extends Marionette.ItemView {
     constructor() {
-        this.template = _.template('<h1>Beeeeeeeep!</h1>');
+        this.template = _.template('<h1>Beeeeeeeep!</h1><hr><a href="#">Back</a>');
         super();
     }
 }
